@@ -1,0 +1,11 @@
+{
+    "name": "Shop2Gate",
+    "short_name": "shop2gate",
+    "theme_color": "#00aba9",
+    "background_color": "#00aba9",
+    "display": "standalone",
+    "orientation": "landscape",
+    "scope": "/",
+    "start_url": "/",
+    "icons": "/public/icons"
+  }

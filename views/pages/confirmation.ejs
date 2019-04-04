@@ -1,0 +1,63 @@
+<body>
+        <!-- Sidenav -->
+        <% include ../partials/sidebar %>
+        <!-- Main content -->
+        <div class="main-content">
+          <!-- Top navbar -->
+          <% include ../partials/navbar %>
+          <!-- Header -->
+          <% include ../partials/header %>
+          <!-- Page content -->
+          <div class="row" style="margin:50px;">
+          <div id="item1" class="card col d-flex justify-content-center" style="width: 18rem;">
+                <img src="img/theme/qr.png" height="50%" width="50%"  alt="Card image cap">
+                <div class="card-body">
+                <h5 class="card-title display-3">Order Confirmed!</h5>
+                <p class="card-text display-4">Kindly show this at the counter!</p>
+                <!-- <a href="/checkout" class="btn btn-primary">Know More</a>                 -->
+                </div>
+                </div>
+                        </div>
+                        <ul class="nav nav-pills nav-pills-circle" style="margin:50px;" id="tabs_2" role="tablist">
+                                <li class="nav-item">
+                                  <a class="nav-link rounded-circle active" id="home-tab" data-toggle="tab" href="#tabs_2_1" role="tab" aria-controls="home" aria-selected="true">
+                                    <span class="nav-link-icon d-block"><i class="ni ni-cart"></i></span>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tabs_2_2" role="tab" aria-controls="profile" aria-selected="false">
+                                    <span class="nav-link-icon d-block"><i class="ni ni-spaceship"></i></span>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tabs_2_2" role="tab" aria-controls="profile" aria-selected="false">
+                                          <span class="nav-link-icon d-block"><i class="ni ni-delivery-fast"></i></span>
+                                        </a>
+                                      </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#tabs_2_3" role="tab" aria-controls="contact" aria-selected="false">
+                                    <span class="nav-link-icon d-block"><i class="ni ni-check-bold"></i></span>
+                                  </a>
+                                </li>
+                              </ul>
+            <!-- Footer -->
+            <% include ../partials/footer %>
+          </div>
+        </div>
+        <script>
+            function remove2item(){
+                //document.getElementById("modelpopup2").close();
+                document.getElementById("pbutton2").setAttribute("class", "btn btn-success");
+                document.getElementById("pbutton2").innerText = "Order Processed";
+            }
+            function remove1item(){
+                //document.getElementById("modelpopup1").close();
+                document.getElementById("pbutton1").setAttribute("class", "btn btn-success");
+                document.getElementById("pbutton1").innerText = "Order Processed";
+            }
+        </script>        
+      
+        <!-- Include scripts -->
+        <% include ../partials/scripts %>
+      </body>
+      

@@ -1,0 +1,85 @@
+<body>
+        <!-- Sidenav -->
+        <% include ../partials/sidebar %>
+        <!-- Main content -->
+        <div class="main-content">
+          <!-- Top navbar -->
+          <% include ../partials/navbar %>
+          <!-- Header -->
+          <% include ../partials/header %>
+          <!-- Page content -->
+          <div class="row" >
+          <div id="item1" class="card col d-flex justify-content-center" style="width: 18rem;">
+                <img src="img/theme/electronics.png" height="40%" width="70%" alt="Card image cap">
+                <div class="card-body">
+                <h5 class="card-title">Electronics</h5>
+                <p class="card-text">Are you an electronic junkie we have got you covered?</p>
+                <a href="/checkout" class="btn " style="background:#F4A601;color: black;">Know More</a>                
+                </div>
+                </div>
+                <div id="item2" class="card col d-flex justify-content-center" style="width: 18rem;">
+                        <img src="img/theme/perfume.png" height="40%" width="70%" alt="Card image cap">
+                        <div class="card-body">
+                        <h5 class="card-title">Perfume</h5>
+                        <p class="card-text">Excellent aroma at your disposal!</p> 
+                        <a href="/checkout" class="btn " style="background:#F4A601;color: black;">Know More</a>                         
+                        </div>
+                        </div>
+                        </div>
+                        <div class="row" >
+                <div id="item3" class="card col d-flex justify-content-center" style="width: 18rem;">
+                                <img src="img/theme/gifts.png" height="40%" width="70%" alt="Card image cap">
+                                <div class="card-body">
+                                <h5 class="card-title">Gifts & Toys</h5>
+                                <p class="card-text">Never fail to surprise your loved ones with a memorable gifts!</p>                        
+                                <a href="/checkout" class="btn " style="background:#F4A601;color: black;">Know More</a>  
+                            </div>
+                </div>
+                <div id="item4" class="card col d-flex justify-content-center" style="width: 18rem;">
+                        <img src="img/theme/drinks.png" height="40%" width="70%" alt="Card image cap">
+                        <div class="card-body">
+                        <h5 class="card-title">Drinks</h5>
+                        <p class="card-text">Toast with your friends after reaching Home!</p>    
+                        <a href="/checkout" class="btn " style="background:#F4A601;color: black;">Know More</a>                      
+            </div>
+            </div>
+            </div>
+            <div class="row" >
+            <div id="item5" class="card col d-flex justify-content-center" style="width: 18rem;">
+                    <img src="img/theme/wine.png" height="40%" width="70%" alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Beverages</h5>
+                    <p class="card-text">Warm Coffee and Tea are the must have delicacies for every Flyer!</p>  
+                    <a href="/checkout" class="btn " style="background:#F4A601;color: black;">Know More</a>                        
+        </div>
+        </div>
+        <div id="item5" class="card col d-flex justify-content-center" style="width: 18rem;">
+                <img src="img/theme/clothes.png" height="40%" width="70%" alt="Card image cap">
+                <div class="card-body">
+                <h5 class="card-title">Clothes</h5>
+                <p class="card-text">Treat your friends with a visually pleasing dresses!</p>  
+                <a href="/checkout" class="btn " style="background:#F4A601;color: black;">Know More</a>                        
+    </div>
+    </div>
+                </div>
+            <!-- Footer -->
+            <% include ../partials/footer %>
+          </div>
+        </div>
+        <script>
+            function remove2item(){
+                //document.getElementById("modelpopup2").close();
+                document.getElementById("pbutton2").setAttribute("class", "btn btn-success");
+                document.getElementById("pbutton2").innerText = "Order Processed";
+            }
+            function remove1item(){
+                //document.getElementById("modelpopup1").close();
+                document.getElementById("pbutton1").setAttribute("class", "btn btn-success");
+                document.getElementById("pbutton1").innerText = "Order Processed";
+            }
+        </script>        
+      
+        <!-- Include scripts -->
+        <% include ../partials/scripts %>
+      </body>
+      

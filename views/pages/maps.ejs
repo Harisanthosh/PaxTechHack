@@ -1,0 +1,110 @@
+<body>
+        <!-- Sidenav -->
+        <% include ../partials/sidebar %>
+        <!-- Main content -->
+        <div class="main-content">
+          <!-- Top navbar -->
+          <% include ../partials/navbar %>
+          <!-- Header -->
+          <% include ../partials/header %>
+          <!-- Page content -->
+          <div class="row">
+          <div id="item1" class="card col d-flex justify-content-center" style="width: 18rem;">
+                <img class="card-img-top" src="img/theme/headphone2.jpg" width="40%" height="30%" alt="Card image cap">
+                <div class="card-body">
+                <h5 class="card-title">Beatle Headphone's</h5>
+                <p class="card-text">With excellent Stereo Dolby Digital Sound.</p>
+                <!-- <a href="#" class="btn btn-primary">Process</a> -->
+                <div class="col-md-4" id="modelpopup1">
+                        <button type="button" id="pbutton1" class="btn btn-block btn-warning mb-3" data-toggle="modal" data-target="#modal-notification">Process</button>
+                        <div class="modal fade" id="modal-notification" tabindex="-1" role="dialog" aria-labelledby="modal-notification" aria-hidden="true">
+                      <div class="modal-dialog modal-danger modal-dialog-centered modal-" role="document">
+                          <div class="modal-content bg-gradient-danger">
+                
+                              <div class="modal-header">
+                                  <h6 class="modal-title" id="modal-title-notification">Your attention is required</h6>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">×</span>
+                                  </button>
+                              </div>
+                
+                              <div class="modal-body">
+                
+                                  <div class="py-3 text-center">
+                                      <i class="ni ni-bell-55 ni-3x"></i>
+                                      <h4 class="heading mt-4">Confirm processing of the following item!</h4>
+                                      <p>Beatle Headphone with excellent Stereo Dolby Digital Sound.</p>
+                                  </div>
+                
+                              </div>
+                
+                              <div class="modal-footer">
+                                  <button type="button" class="btn btn-white" data-dismiss="modal" onclick="remove1item()">Confirm</button>
+                                  <button type="button" class="btn btn-link text-white ml-auto" data-dismiss="modal">Close</button>
+                              </div>
+                
+                          </div>
+                      </div>
+                  </div>
+                    </div>
+                </div>
+                </div>
+                <div id="item2" class="card col d-flex justify-content-center" style="width: 18rem;">
+                        <img class="card-img-top" src="img/theme/chocolate2.jpg" width="40%" height="30%" alt="Card image cap">
+                        <div class="card-body">
+                        <h5 class="card-title">Dark Chocolate</h5>
+                        <p class="card-text">From Charlie's Chocolate Factory!</p>
+                        <div class="col-md-4" id="modelpopup2">
+                                <button type="button" id="pbutton2" class="btn btn-block btn-warning mb-3" data-toggle="modal" data-target="#modal-default">Process</button>
+                                <div class="modal fade" id="modal-default" tabindex="-1" role="dialog" aria-labelledby="modal-default" aria-hidden="true">
+                              <div class="modal-dialog modal- modal-dialog-centered modal-" role="document">
+                                  <div class="modal-content">
+                        
+                                      <div class="modal-header">
+                                          <h6 class="modal-title" id="modal-title-default">Your attention is required</h6>
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                              <span aria-hidden="true">×</span>
+                                          </button>
+                                      </div>
+                        
+                                      <div class="modal-body">
+                        
+                                          <p>Confirm processing of the following item!</p>
+                                          <p>Dark Chocolate from Charlie's chocolate factory.</p>
+                        
+                                      </div>
+                        
+                                      <div class="modal-footer">
+                                          <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="remove2item()">Save changes</button>
+                                          <button type="button" class="btn btn-link  ml-auto" data-dismiss="modal">Close</button>
+                                      </div>
+                        
+                                  </div>
+                              </div>
+                          </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+            <!-- Footer -->
+            <% include ../partials/footer %>
+          </div>
+        </div>
+        <script>
+            function remove2item(){
+                //document.getElementById("modelpopup2").close();
+                document.getElementById("pbutton2").setAttribute("class", "btn btn-success");
+                document.getElementById("pbutton2").innerText = "Order Processed";
+            }
+            function remove1item(){
+                //document.getElementById("modelpopup1").close();
+                document.getElementById("pbutton1").setAttribute("class", "btn btn-success");
+                document.getElementById("pbutton1").innerText = "Order Processed";
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBd3PjUqq81lIOfBPYXrQGWwK5T4ystZjA"></script>
+      
+        <!-- Include scripts -->
+        <% include ../partials/scripts %>
+      </body>
+      

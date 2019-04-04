@@ -1,0 +1,80 @@
+<body>
+        <!-- Sidenav -->
+        <% include ../partials/sidebar %>
+        <!-- Main content -->
+        <div class="main-content">
+          <!-- Top navbar -->
+          <% include ../partials/navbar %>
+          <!-- Header -->
+          <% include ../partials/header %>
+          <!-- Page content -->
+          <div class="container-fluid mt--7">
+            <!-- Table -->
+            <div class="row">
+              <div class="col">
+                <div class="card shadow">
+                  <div class="card-header bg-transparent">
+                    <h3 class="mb-0">Add Campaign</h3>
+                  </div>
+                  <div class="card-body">
+                      <form>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Campaign Name">
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <input type="text" placeholder="Select Category" class="form-control" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <div class="input-group mb-4">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="ni ni-zoom-split-in"></i></span>
+                                  </div>
+                                  <input class="form-control" placeholder="Valid From" type="date">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <div class="input-group mb-4">
+                                  <input class="form-control" placeholder="Valid Till" type="date">
+                                  <div class="input-group-append">
+                                    <span class="input-group-text"><i class="ni ni-zoom-split-in"></i></span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                              <textarea class="form-control form-control-alternative" rows="3" placeholder="Campaign Description ..."></textarea>
+                          </div>    <br/>
+                          <h5 class="mb-0">Campaign Locations</h5> <br/>
+                                <div class="row">
+                                  <div class="col">
+                                    <div class="card shadow border-0">
+                                      <div id="map-canvas" class="map-canvas" data-lat="53.551086" data-lng="9.993682" style="height: 500px;"></div>
+                                    </div>
+                                  </div>
+                                </div>   <br />
+                        <button type="button" class="btn btn-lg btn-block" style="background-color:#F4A601;">Add Campaign</button> 
+                </div>
+              </div>
+            </div>
+            </div>
+            <!-- Footer -->
+            <% include ../partials/footer %>
+          </div>
+        </div>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBd3PjUqq81lIOfBPYXrQGWwK5T4ystZjA"></script>
+
+        <!-- Include scripts -->
+        <% include ../partials/scripts %>
+      </body>
+      

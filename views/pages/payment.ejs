@@ -1,0 +1,154 @@
+<body>
+        <!-- Sidenav -->
+        <% include ../partials/sidebar %>
+        <!-- Main content -->
+        <div class="main-content">
+          <!-- Top navbar -->
+          <% include ../partials/navbar %>
+          <!-- Header -->
+          <% include ../partials/header %>
+          <!-- Page content -->
+          <div class="container-fluid mt--7">
+            <!-- Table -->
+            <div class="row">
+              <div class="col">
+                <div class="card shadow">
+                  <div class="card-header border-0">
+                    <h3 class="mb-0">Payment & Delivery</h3>
+                  </div>
+                  <div class="table-responsive">
+                    <table class="table align-items-center table-flush">
+                      <thead class="thead-light">
+                        <tr>                          
+                          <th scope="col"> Payment Option</th>
+                          <th scope="col"></th>                          
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>                            
+                          <th scope="row">
+                            <div class="media align-items-center">
+                              <a href="#" class="avatar rounded-circle mr-3">
+                                <img alt="Image placeholder" src="img/theme/card_payment.png">
+                              </a>
+                              <div class="media-body">
+                                <span class="mb-0 text-sm">Credit / Debit Card</span>
+                              </div>
+                            </div>
+                          </th>
+                          <td>
+                                <div class="custom-control custom-radio mb-3">
+                                        <input name="custom-radio-2" class="custom-control-input" id="customRadio1" type="radio">
+                                        <label class="custom-control-label" for="customRadio1">  </label>
+                                      </div>
+                        </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <div class="media align-items-center">
+                              <a href="#" class="avatar rounded-circle mr-3">
+                                <img alt="Image placeholder" src="img/theme/logo_paypal.jpg">
+                              </a>
+                              <div class="media-body">
+                                <span class="mb-0 text-sm">Paypal</span>
+                              </div>
+                            </div>
+                          </th>                        
+                          <td>
+                                <div class="custom-control custom-radio mb-3">
+                                        <input name="custom-radio-2" class="custom-control-input" id="customRadio2" type="radio">
+                                        <label class="custom-control-label" for="customRadio2">  </label>
+                                      </div>
+                        </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <div class="media align-items-center">
+                              <a href="#" class="avatar rounded-circle mr-3">
+                                <img alt="Image placeholder" src="img/theme/miles.png">
+                              </a>
+                              <div class="media-body">
+                                <span class="mb-0 text-sm">Miles</span>
+                              </div>
+                            </div>
+                          </th>                        
+                          <td>
+                                <div class="custom-control custom-radio mb-3">
+                                        <input name="custom-radio-2" class="custom-control-input" id="customRadio3" type="radio">
+                                        <label class="custom-control-label" for="customRadio3">  </label>
+                                      </div>
+                        </td>
+                        </tr>
+                        <tr>
+                                <th scope="row">
+                                  <div class="media align-items-center">
+                                    <a href="#" class="avatar rounded-circle mr-3">
+                                      <img alt="Image placeholder" src="img/theme/emi.png">
+                                    </a>
+                                    <div class="media-body">
+                                      <span class="mb-0 text-sm">Installments</span>
+                                    </div>
+                                  </div>
+                                </th>                        
+                                <td>
+                                      <div class="custom-control custom-radio mb-3">
+                                              <input name="custom-radio-2" class="custom-control-input" id="customRadio3" type="radio">
+                                              <label class="custom-control-label" for="customRadio3">  </label>
+                                            </div>
+                              </td>
+                              </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+                    <div id="item1" class="card col d-flex justify-content-center" style="width: 18rem;">
+                          <img  src="img/theme/pick_up.png" width="50%" style="margin:20px;" alt="Card image cap">
+                          <div class="card-body">
+                                <div class="custom-control custom-radio mb-3">
+                                        <input name="custom-radio-1" class="custom-control-input" id="customRadio4" type="radio">
+                                        <label class="custom-control-label" for="customRadio4"> Pick up From shop </label>
+                                </div>
+                          <!-- <h5 class="card-title">Pick up From shop</h5> -->
+                          <!-- <p class="card-text">Are you an electronic junkie we have got you covered?</p> -->
+                          <!-- <a href="/checkout" class="btn btn-primary">Know More</a>                 -->
+                          </div>
+                          </div>
+                          <div id="item2" class="card col d-flex justify-content-center" style="width: 18rem;">
+                                  <img  src="img/theme/to_gate.png" width="50%" style="margin:20px;" alt="Card image cap">
+                                  <div class="card-body">
+                                        <div class="custom-control custom-radio mb-3">
+                                                <input name="custom-radio-1" class="custom-control-input" id="customRadio5" type="radio">
+                                                <label class="custom-control-label" for="customRadio5"> To Gate </label>
+                                        </div>
+                                  <!-- <p class="card-text">Sweet, mouth watering chocolates are at your disposal!</p> 
+                                  <a href="/checkout" class="btn btn-primary">Know More</a>                          -->
+                                  </div>
+                                  </div>
+                                  <div id="item3" class="card col d-flex justify-content-center" style="width: 18rem;">
+                                        <img  src="img/theme/address.png" width="50%" style="margin:20px;" alt="Card image cap">
+                                        <div class="card-body">
+                                                <div class="custom-control custom-radio mb-3">
+                                                        <input name="custom-radio-1" class="custom-control-input" id="customRadio6" type="radio">
+                                                        <label class="custom-control-label" for="customRadio6"> Address </label>
+                                                </div>
+                                        <!-- <p class="card-text">Sweet, mouth watering chocolates are at your disposal!</p> 
+                                        <a href="/checkout" class="btn btn-primary">Know More</a>                          -->
+                                        </div>
+                                        </div>
+                                  </div>
+            <a href="/confirmation" type="button" class="btn btn-lg btn-block" style="background:#F4A601;color: black;">Continue</a>  
+            <!-- Dark table -->
+            
+            
+            <!-- Footer -->
+            <% include ../partials/footer %>
+          </div>
+        </div>
+      
+        <!-- Include scripts -->
+        <% include ../partials/scripts %>
+      </body>
+      
